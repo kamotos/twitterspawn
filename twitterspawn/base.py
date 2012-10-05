@@ -18,3 +18,8 @@ def go():
     for worker in workers:
         worker.start()
     gevent.joinall(workers)
+
+
+def kill():
+    for worker in workers:
+        worker.kill()
